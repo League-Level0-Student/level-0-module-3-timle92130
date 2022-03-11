@@ -18,7 +18,7 @@ public class CrazyCatLady {
 		}
 		// 4. If they have less than 3 cats AND more than 0 cats, call the method below to show them a cat video
 		else if (numCats < 3 ) {
-			playVideo();
+			playVideo("https://www.youtube.com/watch?v=BokT_enrUn0");
 		}
 		//    Hint: You can use the && operator 
 		// 5. If they have 0 cats, show them a video of A Frog Sitting on a Bench Like a Human
