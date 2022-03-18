@@ -10,17 +10,20 @@ public class HighLowGame {
 	public static void main(String[] args) {
 		// 3. Change this line to give you a random number between 1 - 100. 
 		int random = new Random().nextInt(100);
+		for (int i = 0; i < 10; i ++) {
+			System.out.println(random);
+			
+		
 		String guess = JOptionPane.showInputDialog(null,"What is your guess?");
 		// 4. Convert the users’ answer to an int (Integer.parseInt(string))
 		int var = Integer.parseInt(guess);
 		// 2. Print out the random variable above
-		System.out.println(random);
+		
 		// 11. Repeat steps 1 to 10 ten times
-		for (int i = 0; i < 10; i ++) {
-			System.out.println(random);
-			i =+ 1; 
+
 			if (random == var) {
 				System.out.println("you win");
+				System.exit(0);
 				}
 				else if(var < random) {
 					System.out.println("higher");
@@ -29,6 +32,7 @@ public class HighLowGame {
 					System.out.println("lower");
 				}
 		}
+		System.out.println("you loose!");
 			// 1. Ask the user for a guess using a pop-up window, and save their response 
 		
 			// 5. if the guess is correct
